@@ -10,7 +10,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install --frozen-lockfile
-          yarn build
+          BASE_URL="https://dreaming-codes.github.io/school-vue3-bootstrap5/" yarn build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
