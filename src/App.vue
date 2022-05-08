@@ -46,6 +46,9 @@ function doLogoAnimation() {
   timeLine.to(logo.value as HTMLElement, {
     duration: 0.1,
     rotation: 0,
+    onComplete: () => {
+      document.body.style.overflowY = 'hidden';
+    }
   })
   timeLine.to(logo.value as HTMLElement, {
     top: '190vh',
@@ -59,6 +62,11 @@ function doLogoAnimation() {
   timeLine.to(logo.value as HTMLElement, {
     top: '0',
     ease: 'power3.in',
+    onComplete: () => {
+      setTimeout(() => {
+        document.body.style.overflowY = 'auto';
+      }, 1000);
+    }
   })
 }
 </script>
