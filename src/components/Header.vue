@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import GlitchedWriter from "vue-glitched-writer"</script>
+import GlitchedWriter from "vue-glitched-writer";
+</script>
 
 <template>
   <div class="greetings">
