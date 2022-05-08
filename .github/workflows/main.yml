@@ -2,7 +2,7 @@ name: Build and Deploy
 on: [push]
 
 env:
-  VITE_BASE_URL: https://dreaming-codes.github.io/school-vue3-bootstrap5/
+  VITE_BASE_URL: ./school-vue3-bootstrap5/
 
 jobs:
   build-and-deploy:
